@@ -6,7 +6,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import ButtonComponent from './components/ButtonComponent';
 import InputComponent from './components/InputComponent';
-import { Radio } from '@mui/material';
+import Radio from '@mui/material/Radio';
 
 
 export default function App() {
@@ -38,24 +38,26 @@ export default function App() {
               <div>Реквизиты</div>
               <Stack spacing={1}>
 
-                <Box sx={{background: '#fff', border: '1px solid #dedede', borderRadius: '7px', padding: '0px 10px'}}>
+                <Box sx={{alignItems: 'center', background: '#fff', border: '1px solid #dedede', borderRadius: '7px', padding: '15px 20px', fontFamily: "'SanFranciscoProText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"}}>
                   <Stack spacing={1}>
                     <FormControl>
                       <RadioGroup aria-labelledby='demo-radio-buttons-group-label' defaultValue="номер карты" name='radio-buttons-group' row>
-                        <FormControlLabel value="номер карты" control={<Radio />} label="Номер карты" sx={{fontFamily: "'SanFranciscoProText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"}} />
+                        <FormControlLabel value="номер карты" control={<Radio />} label="Номер карты"/>
                         <FormControlLabel value="номер договора" control={<Radio />} label="Номер договора" />
                       </RadioGroup>
                     </FormControl>
-                    <InputComponent />
+                    <InputComponent defaultValue="Номер договора" />
                   </Stack>
                 </Box>
-                
-                <InputComponent />
-                <InputComponent />
+                <Box sx={{background: '#fff', border: '1px solid #dedede', borderRadius: '7px', padding: '15px 20px', fontFamily: "'SanFranciscoProText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"}}>
+                  <InputComponent defaultValue="ФИО владельца" />
+                </Box>
+                <Box sx={{background: '#fff', border: '1px solid #dedede', borderRadius: '7px', padding: '15px 20px', fontFamily: "'SanFranciscoProText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"}}>
+                  <InputComponent defaultValue="Адрес" />
+                </Box>
               </Stack>
             </Stack>
           </Stack> 
-          
 
         </Container>
       </Box>
