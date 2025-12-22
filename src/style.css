@@ -13,9 +13,23 @@
     font-display: swap;
 }
 
-body {
-    font-family: 'SanFranciscoProText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}   
+.title {
+    font-size: 18px;
+}
+
+.css-rizt0-MuiTypography-root {
+    font-family: 'SanFranciscoProText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.css-niqf4j-MuiStack-root {
+    align-items: center;
+}
+
+.progress__visible {
+    width: 100%;
+    height: 10px;
+    border-radius: 8px;
+}
 
 
 

@@ -14,6 +14,7 @@ export default function InputComponent({defaultValue}: inputDefVal) {
         sx={{
           width: '100%',
           border: 'none',
+          fontFamily: "'SanFranciscoProText', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
           '&:focus': {
             border: 'none',
             outline: 'none',
