@@ -5,8 +5,8 @@ export default function IconPlus() {
     return (
         <Box
             sx={{
-                width: 25,
-                height: 25,
+                width: 22,
+                height: 22,
                 borderRadius: '50%',
                 backgroundColor: '#f1f1f1',
                 display: 'flex',
